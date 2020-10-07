@@ -17,7 +17,7 @@ sub register {
             my $name = camelize($app->moniker);
             $name =~ s/::/\//g;
 
-            my $path = $conf->{path} // getcwd . '/' . $name . '/Schema';
+            my $path = $conf->{path} // getcwd . '/lib/' . $name . '/Schema';
 
             my $key = scalar(@names) > 0 ? md5_sum(join('', @names)) : 'all';
 
