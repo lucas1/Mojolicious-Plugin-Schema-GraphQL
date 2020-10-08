@@ -32,15 +32,15 @@ WriteMakefile(
         'Mojo::Base' => 0,
         'Mojo::Util' => 0,
         'GraphQL::Schema' => 0,
-        'Cwd' => 0
+        'FindBin' => 0
     },
 
     TEST_REQUIRES => {
         'Test::More' => 0,
         'Mojo::Base' => 0,
-        'Mojo::Util' => 0,  
+        'Mojo::Util' => 0,
         'GraphQL::Schema' => 0,
-        'Cwd' => 0        
+        'FindBin' => 0        
     },
 
     test => {

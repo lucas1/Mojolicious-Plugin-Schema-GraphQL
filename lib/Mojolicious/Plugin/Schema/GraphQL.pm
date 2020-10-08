@@ -3,7 +3,7 @@ package Mojolicious::Plugin::Schema::GraphQL;
 use Mojo::Base 'Mojolicious::Plugin';
 use Mojo::Util qw/camelize md5_sum/;
 use GraphQL::Schema;
-use Cwd;
+use FindBin qw/$Bin/;
 
 our $VERSION = '0.01';
 
@@ -14,10 +14,10 @@ sub register {
         schema => sub {
             my ($self, @names) = @_;
 
-            my $name = camelize($app->moniker);
-            $name =~ s/::/\//g;
+            my $moniker = camelize($app->moniker);
+            $moniker =~ s/::/\//g;
 
-            my $path = $conf->{path} // getcwd . '/lib/' . $name . '/Schema';
+            my $path = $conf->{path} // $Bin . '/../lib/' . $moniker . '/Schema';
 
             my $key = scalar(@names) > 0 ? md5_sum(join('', @names)) : 'all';
 

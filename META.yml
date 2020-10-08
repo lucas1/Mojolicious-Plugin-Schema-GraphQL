@@ -3,8 +3,8 @@ abstract: 'Schema generator by Files for Mojolicious'
 author:
   - 'Lucas Tiago de Moraes <lucastiagodemoraes@gmail.com>'
 build_requires:
-  Cwd: '0'
   ExtUtils::MakeMaker: '0'
+  FindBin: '0'
   GraphQL::Schema: '0'
   Mojo::Base: '0'
   Mojo::Util: '0'
@@ -23,7 +23,7 @@ no_index:
     - t
     - inc
 requires:
-  Cwd: '0'
+  FindBin: '0'
   GraphQL::Schema: '0'
   Mojo::Base: '0'
   Mojo::Util: '0'
