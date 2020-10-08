@@ -1,6 +1,6 @@
 # NAME
 
-Mojolicious::Plugin::Schema::GraphQL - Schema generator by Files for Mojolicious [Mojolicious::Plugin::Schema::GraphQL](https://metacpan.org/pod/Mojolicious::Plugin::Schema::GraphQL)
+[Mojolicious::Plugin::Schema::GraphQL](https://metacpan.org/pod/Mojolicious::Plugin::Schema::GraphQL) - Schema generator by Files for Mojolicious
 
 # SYNOPSIS
 
